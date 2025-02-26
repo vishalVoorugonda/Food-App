@@ -1,0 +1,103 @@
+
+.eachitem {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.eachitem img {
+    width: 100%; 
+    max-width: 300px; 
+    height: auto; 
+    border-radius: 10px;
+}
+
+.eachitem p {
+    width: 90%;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: gray;
+}
+
+
+.inputs {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.inputs input {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: rgb(185, 183, 183);
+    width: 90%; 
+    max-width: 300px; 
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+
+.inputs button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    background-color: orange;
+    color: #fff;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.inputs button:hover {
+    background-color: darkorange;
+}
+
+/* Tablet screens */
+@media (min-width: 600px) {
+    .eachitem {
+        flex-direction: row; 
+        padding: 30px;
+    }
+
+    .eachitem img {
+        max-width: 350px; 
+    }
+
+    .eachitem p {
+        font-size: 1.3rem;
+    }
+
+    .inputs input {
+        width: 80%; 
+        max-width: 350px;
+    }
+}
+
+
+@media (max-width: 599px) {
+    .eachitem {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .eachitem img {
+        max-width: 250px; 
+    }
+
+    .eachitem p {
+        font-size: 1.1rem;
+    }
+
+    .inputs input {
+        width: 100%; 
+        max-width: 280px;
+    }
+
+    .inputs button {
+        width: 100%; 
+        max-width: 300px;
+    }
+}

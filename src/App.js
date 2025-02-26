@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from 'react'
+import Food from './component/Food'
+import  FoodProvider  from './component/Context'
+import { Routes,Route } from 'react-router-dom'
+import EachFoodItem from './component/EachFoodItem'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <FoodProvider>
+        <Routes>
+          <Route path='/' element= {<Food/>} />
+          <Route path="/food/:id" element={<EachFoodItem/>}/>
+        </Routes>
+      </FoodProvider>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
