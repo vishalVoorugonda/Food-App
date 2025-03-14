@@ -7,7 +7,7 @@ function Food() {
   return (
     <div className={styles.container}>
         <div className={styles.inputs}>
-            <h1>Food Recipe App</h1>
+            <h1 className={styles.head}>Food Recipe App</h1>
             <input value={input} onChange={handleInputChange} type='text' placeholder='Search....'/>
             <button onClick={handleSearch}>Search</button>
            <h2>{msg}</h2>

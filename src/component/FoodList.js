@@ -10,9 +10,10 @@ function FoodList() {
     <div className={styles.items}>
       <div className={styles.itemsDetails}>
         {loading ? (
-          <div className={styles.loader}>
-            <h2>Loading</h2>
-          </div>
+            <div className={styles.loader}>
+              <h2 >Loading...</h2>
+            </div>
+         
         ) : (
           <>
             {data.map((item) => (

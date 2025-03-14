@@ -4,6 +4,7 @@
     align-items: center;
     padding: 20px;
     width: 100%;
+    cursor: pointer;
 }
 
 .itemsDetails {
@@ -13,8 +14,13 @@
     width: 100%;
     max-width: 1200px;
     padding: 10px;
+    position: relative;
 }
-
+.loader{
+    position: absolute;
+    left: 50%;
+    color: gray;
+}
 .foodItem {
     display: flex;
     flex-direction: column;
@@ -45,16 +51,6 @@
     color: #333;
 }
 
-.loader {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    color: grey;
-    font-size: 1.2rem;
-    margin-top: 20px;
-    margin-left: 100%;
-}
 
 .recipeBtn {
     background-color: rgb(244, 162, 10);
@@ -64,6 +60,7 @@
     cursor: pointer;
     border: none;
     border-radius: 40px;
+    margin: 15px 0px;
     transition: 0.3s ease-in-out;
 }
 
@@ -89,7 +86,7 @@
     }
 
     .recipeBtn {
-        width: 90%; /* Full-width button on mobile */
+        width: 90%; 
         max-width: 300px;
     }
 
